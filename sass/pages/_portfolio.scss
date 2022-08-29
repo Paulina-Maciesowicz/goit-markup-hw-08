@@ -1,0 +1,91 @@
+
+.button__list {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.tabs {
+    margin: 0 auto;
+    padding-left: 200px;
+    padding-right: 200px;
+     .wrapper {
+        /* dodawnie flex-wrap tylko do wrappera znajdującego się w container image. */
+        /* Najlepiej utwożyć osobną klasę lub drugą klasę */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* Odległośc między poszczególnym dzieckiem ul w z góry doły i z boków */
+        gap: 30px;
+        }
+    &__item {
+            gap: 30px;
+        }
+    &__figure {
+        position: relative;
+        overflow: hidden;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+        transition-property: translate;
+    
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            cursor: pointer;
+        }
+        & {
+            &:hover {
+                .tabs__overlay {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.555;
+        letter-spacing: 0.03em;
+        color: #fff;
+        margin: auto 0;
+        padding: 49px 45px 49px 24px;
+    }
+    &__frame {
+        border-bottom: 1px solid #E5E5E5;
+        border-right: 1px solid #E5E5E5;
+        border-left: 1px solid #E5E5E5;
+        padding: 20px 24px 20px 24px;
+        position:relative;
+        z-index: 1;
+        background: #fff;  
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        text-align: left;
+        margin: 0 auto;
+        margin-bottom: 4px;
+        letter-spacing: 0.06em;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.875;
+        color: #757575;
+        margin: 0 auto;
+        letter-spacing: 0.06em;
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 150, 243, 0.9);
+    
+        transform: translateY(100%);
+        transition-duration: 250ms;
+        transition-property: transform, transition, background;
+    }
+}

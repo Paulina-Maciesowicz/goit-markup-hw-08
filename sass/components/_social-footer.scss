@@ -1,0 +1,101 @@
+.join {
+    width: 206px;
+    margin-left: 70px;
+    margin-right: 78px;
+    &__title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 11px;
+        background: rgba(255, 255, 255, 0.1);
+        margin-right: 10px;
+        margin-top: 20px; 
+        color: #fff;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    
+        &:hover {
+            fill:#ffffff;
+            border-radius: 50%;
+            background-color: #2196f3;
+        }
+        &:hover .join__svg { 
+            fill :#fff;
+        }
+    }
+    &__svg {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    
+        &:hover {
+            fill:#ffffff;
+        }
+    }
+}
+
+.newsletter {
+    width: 570px;
+    &__form {
+        display: flex;
+    }
+    &__label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.166;
+        letter-spacing: 0.01em;
+        color: #757575;
+    
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    &__title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+    }
+    &__input {
+        margin-top: 20px;
+        padding: 15px;
+        height: 50px;
+        width: 358px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: #2F303A;
+        margin-right: 12px;
+    
+        &:focus{
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        &:focus-visible {
+             outline: rgba(255, 255, 255, 0.3);
+        }
+    }
+    &__svg {
+        width: 24px;
+        height: 24px;
+    }
+}

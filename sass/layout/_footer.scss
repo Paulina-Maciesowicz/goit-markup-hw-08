@@ -1,0 +1,58 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__navigation {
+        width: 246px;
+    }
+    &__link {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700; 
+        &--highlight {
+            color: #2196f3;
+            font-family: 'Raleway', sans-serif;
+        }
+    }
+    &__list {
+        margin-top:20px;
+    }
+    &__contact--bold {
+        color: #ffffff;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+        transition-property: color;
+    
+        &:hover,
+        &:focus {
+            color: rgba(33, 150, 243, 1);
+        }
+    }
+    &__contact--gray {
+        text-decoration: none;
+        font-style: normal;
+        color: #757575;
+        line-height: 1.714;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+        transition-property: color;
+    
+        &:hover,
+        &:focus {color: rgba(33, 150, 243, 1);
+        }
+    }   
+}

@@ -1,0 +1,34 @@
+.hero {
+    background-color: #2F303A;
+    background-image: url(../images/section-hero/background-squoosh.jpg);
+    width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    text-align: center;
+    position: relative;
+
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.hero__overlay {
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.hero__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    color: #ffffff;
+    line-height: 1.363;
+    width: 670px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 200px;
+}

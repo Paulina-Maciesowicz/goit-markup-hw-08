@@ -1,0 +1,96 @@
+.nav {
+    display: flex;
+    justify-content: center;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        margin-right: 46px;
+    } 
+    &__logo {
+        margin-right: 93px;
+    }
+    &__link {
+        text-decoration: none;
+        color: #000000;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    
+        &--highlight {
+            text-decoration: none;
+            color: #2196f3;
+            font-family: 'Raleway', sans-serif;
+        }
+        /* margin-right: 93px; */
+    }
+    &__element {
+        position: relative;
+        text-decoration: none;
+        font-style: normal;
+        color: #000000;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.02em;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+        transition-property: color;
+    
+        &:after {
+            content: "";
+            position: absolute;
+            background-color: var(--main-color);
+            height: 4px;
+            border-radius: 2px;
+            width: 0;
+            left: 0;
+            bottom: -32px;
+        
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+            transition-property: background-color;
+        }
+        &:hover,
+        &:focus { 
+            color: rgba(33, 150, 243, 1);
+        }
+        & {
+            &:hover {
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+        &.nav__element--active {
+            &:after {
+                position: absolute;
+                background-color: var(--main-color);
+                height: 4px;
+                border-radius: 2px;
+                width: 100%;
+                left: 0;
+            }
+        }
+        & .nav__element--active {
+            color: var(--main-color);
+            position: fixed;
+        }
+    }
+}
+
+
+// .nav__element.nav__element--active:after {
+//     position: absolute;
+//     background-color: var(--main-color);
+//     height: 4px;
+//     border-radius: 2px;
+//     width: 100%;
+//     left: 0; 
+// }
+// .nav__element .nav__element--active {
+//     color: var(--main-color);
+//     position: fixed;
+// }

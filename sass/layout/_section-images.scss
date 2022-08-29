@@ -1,0 +1,32 @@
+.images {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__svg {
+        padding:25px;
+        margin-bottom:30px;
+        width: 270px; 
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 3%;
+        text-decoration: bold;
+    }
+    &__subtitle {
+        color: #757575;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 3%;
+    }
+}
+

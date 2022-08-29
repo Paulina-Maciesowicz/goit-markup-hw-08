@@ -1,0 +1,51 @@
+.contact {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    &__link {
+        text-decoration: none;
+        font-style: normal;
+        color: #757575;
+        line-height: 1.714;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+        transition-property: color;
+    
+        &:hover,
+        &:focus {color: rgba(33, 150, 243, 1);
+        }
+        & {
+            &:hover,
+            &:focus {
+                .contact__svg {
+                    color: rgba(33, 150, 243, 1);
+                    fill: var(--main-color);
+                }
+            }
+        }
+    }
+    &__svg {
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+        transition-property: fill;
+        margin-right: 10px;
+        fill: #757575;
+        &--mail {
+            width:16px;
+            height:12px;   
+        }
+        &--phone {
+            width:10px;
+            height:16px;  
+        }
+        
+    }
+}
+
