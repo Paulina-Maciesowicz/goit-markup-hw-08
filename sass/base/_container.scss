@@ -1,37 +1,70 @@
-.header__container {
-    width: 1200px;
+.container {
+    width: 100%;
+    align-items: center;
     margin: 0 auto;
-    padding: 0 15px;
 }
-.images__container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 480px;
+        max-height: 400px;
+        padding: 118px 57px;
+        margin: 0 auto;   
+    }
+    
 }
-.works {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        max-height: 400px;
+        padding: 118px 201px;
+        margin: 0 auto;
+    }
 }
-.team__container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    gap: 30px;
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        max-height: 600px;
+        max-width: 1200px;
+        padding: 280px 237px;
+        margin: 0 auto;
+    }
 }
-.client__container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.footer__container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-}
-.button__container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px; 
-}
+
+// .header__container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+// }
+// .images__container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+// }
+// .works {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+// }
+// .team__container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+//     gap: 30px;
+// }
+// .client__container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+// }
+// .footer__container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+//     display: flex;
+// }
+// .button__container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 15px; 
+// }
