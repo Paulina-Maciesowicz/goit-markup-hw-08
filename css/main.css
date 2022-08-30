@@ -322,56 +322,55 @@ figure {
   height: 16px;
 }
 
-@media screen and (min-width: 1200px) {
-  .social {
-    width: 206px;
-    height: 56px;
-    margin-top: 16px;
-  }
-  .social__list__item {
-    width: 206px;
-    height: 56px;
-    margin-top: 16px;
-  }
-  .social__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .social__item {
-    width: 206px;
-    height: 56px;
-    margin-top: 16px;
-  }
-  .social__icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 11px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
-    transition-property: background-color;
-  }
-  .social__icon:hover {
-    fill: #ffffff;
-    border-radius: 50%;
-    background-color: #2196f3;
-  }
-  .social__icon:hover .social__svg {
-    fill: #fff;
-  }
-  .social__svg {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
-  }
-  .social__svg:hover {
-    fill: #ffffff;
-  }
+.social {
+  width: 206px;
+  height: 56px;
+  margin-top: 16px;
 }
+.social__list__item {
+  width: 206px;
+  height: 56px;
+  margin-top: 16px;
+}
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__item {
+  width: 206px;
+  height: 56px;
+  margin-top: 16px;
+}
+.social__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 11px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+  transition-property: background-color;
+}
+.social__icon:hover {
+  fill: #ffffff;
+  border-radius: 50%;
+  background-color: #2196f3;
+}
+.social__icon:hover .social__svg {
+  fill: #fff;
+}
+.social__svg {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+}
+.social__svg:hover {
+  fill: #ffffff;
+}
+
 .join {
   width: 206px;
   margin-left: 70px;
