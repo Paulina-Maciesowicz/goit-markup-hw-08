@@ -642,12 +642,12 @@ figure {
   padding-right: 58px;
   padding-left: 57px;
 }
-
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
-  .hero {
+  .hero .hero {
     background-image: url("../imagess/header/header-mobile@2x.jpg");
   }
 }
+
 @media screen and (min-width: 768px) {
   .hero {
     background-color: #2F303A;
@@ -663,6 +663,11 @@ figure {
     margin-bottom: 30px;
     padding-right: 202px;
     padding-left: 201px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: url("../imagess/header/header-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -683,6 +688,11 @@ figure {
     margin-bottom: 30px;
     padding-right: 237px;
     padding-left: 237px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: url("../imagess/header/header-desktop@2x.jpg");
   }
 }
 .images {
