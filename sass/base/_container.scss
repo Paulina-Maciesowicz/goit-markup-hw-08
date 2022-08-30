@@ -7,27 +7,23 @@
 @media screen and (min-width: 480px) {
     .container {
         max-width: 480px;
-        max-height: 400px;
-        padding: 118px 57px;
-        margin: 0 auto;   
+        height: 400px;
+        // padding: 118px 57px;   
     }
     
 }
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        max-height: 400px;
-        padding: 118px 201px;
-        margin: 0 auto;
+        height: 400px;
+        // padding: 118px 201px;
     }
 }
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1200px;
-        max-height: 600px;
-        max-width: 1200px;
-        padding: 280px 237px;
-        margin: 0 auto;
+        height: 600px;
+        // padding: 280px 237px;
     }
 }
 
