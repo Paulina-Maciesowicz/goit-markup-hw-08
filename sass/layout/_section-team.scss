@@ -2,6 +2,8 @@
 .team {
     background-color: #F5F4FA;
     background-size: auto;
+    width: 480px;
+    height: 2761px;
     padding-top: 94px;
     padding-bottom: 94px;
     &__title {
@@ -54,31 +56,32 @@
         letter-spacing: 3%;
         text-align: center;
         margin: 0 auto;
-    }
-    &__photo {
-        .team {
-        @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+    }  
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
-
-        &__photo--1 {
-        background-image: url("../imagess/people/people1/people1-mobile@2x.jpg");
+    .team {
+        &__photo {
+            width: 450px;
+            height: 460px;
         }
-        &__photo--2 {
-        background-image: url("../imagess/people/people2/people2-mobile@2x.jpg");
-            }
-        
-        &__photo--3 {
-        background-image: url("../imagess/people/people3/people3-mobile@2x.jpg");
-            }
-        &__photo--4 {
-        background-image: url("../imagess/people/people4/people4-mobile@2x.jpg");
-                }    
-        
-        }
+      &__photo--1 {
+        background-image: url('../imagess/people/people1/people1-mobile@2x.jpg');
+      }
+      &__photo--2 {
+        background-image: url('../imagess/people/people2/people2-mobile@2x.jpg');
+      }
+  
+      &__photo--3 {
+        background-image: url('../imagess/people/people3/people3-mobile@2x.jpg');
+      }
+      &__photo--4 {
+        background-image: url('../imagess/people/people4/people4-mobile@2x.jpg');
+      }
     }
-}
-}
+  }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .team {
         &__title {

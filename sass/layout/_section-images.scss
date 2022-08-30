@@ -2,6 +2,9 @@
 .images {
     &__list {
         padding: 15px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     &__svg {
         padding: 25px 190px;
@@ -28,7 +31,8 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 1.714;
-        letter-spacing: 3%;  
+        letter-spacing: 3%;
+        max-width: 450px; 
     } 
 }
 
@@ -37,6 +41,7 @@
         &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
         }
         &__svg {

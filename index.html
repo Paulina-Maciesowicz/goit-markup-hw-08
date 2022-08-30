@@ -9,6 +9,7 @@
     <title>Studio</title>
     <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,16 +20,18 @@
 
   <body>
 <!----------------------header-------------------------->
-<!-- <header class="header">
+<header class="header">
   <div class="header__container">
+    <h3 class="nav__logo">
+      <a class="nav__link" href="./index.html"
+        ><span class="nav__link nav__link--highlight">Web</span>Studio</a
+      >
+    </h3>
+    
       <nav class="nav">
         <ol class="nav__list">
           <li class="nav__item">
-            <h3 class="nav__logo">
-              <a class="nav__link" href="./index.html"
-                ><span class="nav__link nav__link--highlight">Web</span>Studio</a
-              >
-            </h3>
+            
           </li>
           <li class="nav__item">
             <a class="nav__element nav__element--active" href="./index.html"
@@ -66,10 +69,29 @@
               >(48)111-111-111</a
             >
           </li>
-        </ul>    
+        </ul> 
+        <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>   
       </nav>
     </div>
-    </header> -->
+    </header>
 
     <main>
 <!-----------------------main-hero------------------->
@@ -187,12 +209,35 @@
 
             <li class="team__item">
               <figure class="team__figure">
-                <img class="team__photo team__photo--1"
+                <picture>
+                  <source
+                    srcset="
+                      ../imagess/people/people1/people1-mobile.jpg    1x,
+                      ../imagess/people/people1/people1-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)" />
+                  <source
+                    srcset="
+                      ../imagess/people/people1/people1-tablet.jpg    1x,
+                      ../imagess/people/people1/people1-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)" />
+                  <source
+                    srcset="
+                      ../imagess/people/people1/people1-desktop.jpg    1x,
+                      ../imagess/people/people1/people1-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)" />
+                  <img
+                    alt="John Doe"
+                    src="../imagess/people/people1/people1-mobile.jpg"
+                    
+                /></picture>
+                <!-- <img class="team__photo team__photo--1"
                 src="imagess/people/people1/people1-mobile.jpg"
-                width="450"
-                height="460"
+                
                   alt="John-Doe-Product-Designer"
-                />
+                /> -->
                 <figcaption class="team__figcaption">
                   <h4 class="team__name">John Doe</h4>
                   <p class="team__job">Product Designer</p>
@@ -247,12 +292,36 @@
 
              <li class="team__item">
               <figure class="team__figure">
-                <img class="team__photo team__photo--2"
+                <picture>
+                  <source
+                    srcset="
+                      ../imagess/people/people2/people2-mobile.jpg    1x,
+                      ../imagess/people/people2/people2-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)" />
+                  <source
+                    srcset="
+                      ../imagess/people/people2/people2-tablet.jpg    1x,
+                      ../imagess/people/people2/people2-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)" />
+                  <source
+                    srcset="
+                      ../imagess/people/people2/people2-desktop.jpg    1x,
+                      ../imagess/people/people2/people2-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)" />
+                  <img
+                    alt="Nicole-Doe-Frontend-Developer"
+                    src="../imagess/people/people2/people2-mobile.jpg"
+                    
+                /></picture>
+                <!-- <img class="team__photo team__photo--2"
                 src="imagess/people/people2/people2-mobile.jpg"
                 width="450"
                 height="460"
                 alt="Nicole-Doe-Frontend-Developer"
-                />
+                /> -->
                 <figcaption class="team__figcaption">
                   <h4 class="team__name">Nicole Doe</h4>
                   <p class="team__job">Frontend Developer</p>
@@ -306,12 +375,36 @@
 
             <li class="team__item">
               <figure class="team__figure">
-                <img class="team__photo team__photo--3"
+                <picture>
+                  <source
+                    srcset="
+                      ../imagess/people/people3/people3-mobile.jpg    1x,
+                      ../imagess/people/people3/people3-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)" />
+                  <source
+                    srcset="
+                      ../imagess/people/people3/people3-tablet.jpg    1x,
+                      ../imagess/people/people3/people3-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)" />
+                  <source
+                    srcset="
+                      ../imagess/people/people3/people3-desktop.jpg    1x,
+                      ../imagess/people/people3/people3-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)" />
+                  <img
+                    alt="Mike-Newton-Marketing"
+                    src="../imagess/people/people3/people3-mobile.jpg"
+                    
+                /></picture>
+                <!-- <img class="team__photo team__photo--3"
                 src="imagess/people/people3/people3-mobile.jpg"
                   width="450"
                   height="460"
                   alt="Mike-Newton-Marketing"
-                /> 
+                />  -->
                 <figcaption class="team__figcaption">
                   <h4 class="team__name">Mike Newton</h4>
                   <p class="team__job">Marketing</p>
@@ -365,12 +458,36 @@
 
             <li class="team__item">
               <figure class="team__figure">
-                <img class="team__photo team__photo--4"
+                <picture>
+                  <source
+                    srcset="
+                      ../imagess/people/people4/people4-mobile.jpg    1x,
+                      ../imagess/people/people4/people4-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)" />
+                  <source
+                    srcset="
+                      ../imagess/people/people4/people4-tablet.jpg    1x,
+                      ../imagess/people/people4/people4-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)" />
+                  <source
+                    srcset="
+                      ../imagess/people/people4/people4-desktop.jpg    1x,
+                      ../imagess/people/people4/people4-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)" />
+                  <img
+                    alt="Mike-Newton-Marketing"
+                    src="../imagess/people/people4/people4-mobile.jpg"
+                    
+                /></picture>
+                <!-- <img class="team__photo team__photo--4"
                   src="imagess/people/people4/people4-mobile.jpg"
                   width="450"
                   height="460"
                   alt="Noah-Bee-UI-Designer"
-                /> 
+                />  -->
                 <figcaption class="team__figcaption">
                   <h4 class="team__name">Noah Bee</h4>
                   <p class="team__job">UI Designer</p>
@@ -426,8 +543,8 @@
       </section>
 
 <!--------------------section-our-clients--------------->
-      <!-- <section class="client">
-        <div class="client__container">      
+      <section class="client">
+        <div class="container">      
             <h2 class="client__title">Nasi klienci</h2>
             <div class="client__box">
               <ul class="client__list">
@@ -499,7 +616,30 @@
               </ul>
             </div>
         </div>
-      </section> -->
+      </section>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+          <li><a href="" class="link">Agencja</a></li>
+          <li><a href="" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Kontakt</a></li>
+        </ul>
+      </div>
     </main>
 
 <!----------------------FOOTER-------------------------->
@@ -612,7 +752,7 @@
             </button>
           </form>
         </div>
-      </div>
+      </div> 
     </footer> -->
 
 <!----------------------modal-window-------------------------->
@@ -708,5 +848,12 @@
     <button data-modal-close type="button">X</button>
     <div class="backdrop is-hidden" data-modal>modal</div> -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
