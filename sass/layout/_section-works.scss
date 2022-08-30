@@ -1,8 +1,5 @@
 .works {
-    width: 1200px;
-    margin: 0 auto;
     padding: 0 15px;
-
     &__title {
         font-weight: 700;
         font-size: 36px;
@@ -15,13 +12,15 @@
     &__list {
         width: 1200px;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         padding-bottom: 94px;
         margin: 0 auto;
+        
     }
     &__item {
         position: relative;
         overflow: hidden;
+        margin-right: 30px;
     
         & {
             >.works__subtitle {
