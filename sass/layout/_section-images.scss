@@ -2,6 +2,7 @@
 .images {
     &__list {
         padding: 15px;
+
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -32,61 +33,33 @@
         font-size: 14px;
         line-height: 1.714;
         letter-spacing: 3%;
-        max-width: 450px; 
     } 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .images {
         &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         gap: 30px;
-        }
-        &__svg {
-            padding: 25px 142px;
-            width: 354px;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
         }
         &__title {
-            width: 270px;
-            height: 16px;
-            left: 15px;
             text-align: start;
             
         }
         &__subtitle {
-            width: 354px;
-            height: 75px;
-            left: 15px;
-            top: 716px;
+            height: 75px;     
         }
     }
 }
 @media screen and (min-width: 1200px) {
-    .images {
+        .images {
+           &__subtitle {
+                max-width: 270px;     
+        }
         &__list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-        }
-        &__svg {
-            padding: 25px;
-            margin-bottom:30px;
-            width: 270px; 
-            height: 120px;
-            background: #F5F4FA;
-            border-radius: 4px;
-        }
-         &__title {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.142;
-            letter-spacing: 3%;
-            text-decoration: bold;
-
-            text-align: start;
+            flex-wrap: nowrap;
+          }
         }
     }
-}
